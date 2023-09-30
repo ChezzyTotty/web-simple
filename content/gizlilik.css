@@ -1,0 +1,132 @@
+/* Genel sayfa stilini belirleyelim */
+body {
+    font-family: 'Open Sans', sans-serif; /* Yazı tipi ve karakter seti */
+    line-height: 1.5; /* Satır boşluğu ayarı */
+    margin: 0;
+    padding: 0;
+    background-color: #FFF8F0; /* Sayfa arka plan rengi */
+  }
+  
+  /* Başlık stilini belirleyelim */
+  header {
+    background-image: url('header-bg.jpg');
+    background-size: cover;
+    color: #fff; /* Başlık yazı rengi */
+    text-align: center; /* Ortalamaya ayarlayalım */
+    padding: 6em 2em; /* Kenar boşluğu ayarlayalım */
+  }
+  
+  /* Sayfa başlığının stilini belirleyelim */
+  h1 {
+    font-size: 3em; /* Yazı boyutu */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Hafif gölgeli yazı */
+    margin-bottom: 0.5em; /* Alt kenar boşluğu */
+  }
+  
+  /* Alt başlıklarının stilini belirleyelim */
+  h2 {
+    font-size: 2em; /* Yazı boyutu */
+    margin-top: 2em; /* Üst kenar boşluğu */
+    margin-bottom: 0.5em; /* Alt kenar boşluğu */
+    text-transform: uppercase; /* Büyük harfle yazalım */
+    letter-spacing: 2px; /* Harfler arası boşluğu ayarlayalım */
+  }
+  
+  /* Bölümlerin stilini belirleyelim */
+  section {
+    padding: 2em;
+    margin: 2em 0;
+    background-color: #fff; /* Arka plan rengi */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Hafif bir gölgelendirme ekleyelim */
+    border: 1px solid #eee; /* Çerçeve rengi ve kalınlığı */
+  }
+  
+  /* Bölüm başlıklarında stil ve animasyon ekleyelim*/
+  section h2 {
+    position: relative; /* Göreceli pozisyon verelim */
+    display: inline-block; /* Blok şeklinde yazalım */
+  }
+  
+  /* Bölüm başlıklarının altındaki alt çizgiyi belirleyelim */
+  section h2::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #E69138; /* Alt çizgi rengi */
+    position: absolute; /* Mutlak pozisyon verelim */
+    bottom: -10px;
+    left: 0;
+    transform: scale(0, 1); /* Alt çizgiyi saklayalım */
+    transition: transform 0.3s ease-in-out; /* Animasyon geçiş efekti ekleyelim */
+  }
+  
+  /* Bölüm başlıklarının üzerine geldiğinde alt çizgiyi gösterelim */
+  section h2:hover::after {
+    transform: scale(1, 1); /* Alt çizgiyi gösterelim */
+  }
+  
+  /* Liste stilini belirleyelim */
+  ul, ol {
+    margin: 1em 0;
+    padding: 0 0 0 2em;
+  }
+  
+  /* Liste öğelerinin stilini belirleyelim */
+  li {
+    margin-bottom: 0.5em; /* Alt kenar boşluğu */
+  }
+  
+  /* Link stilini belirleyelim */
+  a {
+    color: #E69138; /* Link rengi */
+    text-decoration: none; /* Altını çizmeyelim */
+    transition: color 0.3s ease-in-out; /* Animasyon geçiş efekti ekleyelim */
+  }
+  
+  /* Link stilini belirleyelim üzerinde durumdayken*/
+  a:hover {
+    color: #BF4E30; /* Link rengi */
+  }
+  
+  /* İletişim bilgi stilini belirleyelim */
+  #contact {
+    margin-top: 2em; /* En üst bölümü sıfıra ayarlayalım */
+    text-align: center; /* Orta hizada ayarlayalım */
+  }
+  
+  /* İletişim bilgi kutusunu oluşturalım */
+  .contact-box {
+    background-color: #fff; /* Arka plan rengi */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Hafif bir gölgelendirme ekleyelim */
+    border: 1px solid #eee; /* Çerçeve rengi ve kalınlığı */
+    padding: 2em;
+    max-width: 500px; /* Genişlik ayarlayalım */
+    margin: 0 auto;
+  }
+  
+  /* Form alanları için stil belirleyelim */
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    border: 1px solid #ccc; /* Çerçeve rengi ve kalınlığı */
+    padding: 0.5em;
+    margin-bottom: 1em; /* Alt kenar boşluğu */
+    width: 100%;
+    font-size: 1em; /* Yazı boyutu */
+    font-family: inherit;
+  }
+  
+  input[type="submit"] {
+    background-color: #E69138; /* Arkaplan rengi */
+    color: #fff; /* Yazı rengi */
+    border: none; /* Çerçeve yok */
+    padding: 1em 2em;
+    cursor: pointer;
+    text-transform: uppercase; /* Büyük harfle yazılmasını sağlayalım */
+    font-weight: bold; /* Kalın yazı */
+    transition: background-color 0.3s ease-in-out; /* Animasyon efekti ekleyelim */
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #BF4E30; /* Arkaplan rengi */
+  }

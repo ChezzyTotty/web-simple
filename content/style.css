@@ -1,0 +1,95 @@
+body {
+    background: #2c3e50;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.form {
+    background: #34495e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    text-align: center;
+}
+
+h1.login-title {
+    color: #ecf0f1;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.login-input {
+    font-size: 18px;
+    border: 2px solid #ecf0f1;
+    padding: 12px;
+    margin-bottom: 20px;
+    width: 100%;
+    border-radius: 5px;
+    background: #2c3e50;
+    color: #ecf0f1;
+    transition: border-color 0.3s ease-in-out;
+    box-sizing: border-box; /* Kutu modelini düzeltme */
+}
+
+.login-input:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+.login-button {
+    background: #3498db;
+    color: #fff;
+    border: 0;
+    padding: 14px;
+    width: 100%;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.login-button:hover {
+    background: #2980b9;
+}
+
+.link {
+    color: #ecf0f1;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.link a {
+    color: #8af511;
+    text-decoration: none;
+}
+
+h3 {
+    font-weight: bold;
+    color: #ecf0f1;
+    font-size: 24px;
+}
+
+.google-login-button {
+    display: inline-block;
+    background-color: #4285f4;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.google-login-button img {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.google-login-button:hover {
+    background-color: #357ae8;
+}
